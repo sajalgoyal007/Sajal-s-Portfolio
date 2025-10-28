@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sajal's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Navigation Bar ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+          <li class="gaping"><a href="#about">About</a></li>
+          <li class="gaping"><a href="#skills">Skills</a></li>
+          <li class="gaping"><a href="#projects">Projects</a></li>
+            <li class="gaping"><a href="#certifications">Certifications</a></li>
+          <li class="gaping"><a href="#contact">Contact</a></li>
+          <li class="gaping"><a href="#home">Home</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-btn">🌙</button>
+    </nav>
+  </header>
+
+  <!-- ===== Home Section ===== -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <div class="text">
+        <h1>Hi, I'm <span class="highlight">Sajal Goyal</span></h1>
+        <h2 class="dynamic-tagline">
+  I’m a <span id="changing-word">Web Developer</span>
+</h2>
+
+        <p>Welcome to my portfolio website. I love building projects that make a difference.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+      <div class="photo">
+        <img src="Sajal.png" alt="Your Photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+ <section id="about" class="about">
+  <h2 class="section-title gradient-title">About Me</h2>
+  <p>
+    I’m <span class="highlight-strong">Sajal Goyal</span>, a tech-driven 
+    <span class="highlight-cool">B.Tech student</span> and 
+    <span class="highlight-strong">2★ CodeChef programmer</span>
+    who loves building real-world solutions.  
+    I’ve developed projects like 
+    <span class="highlight-cool">Blood Connect</span> and 
+    <span class="highlight-cool">Neuro-Nest</span>, blending creativity with clean, efficient code. I enjoy exploring 
+    <span class="highlight-cool">Web</span>, <span class="highlight-cool">AI</span>, and 
+    <span class="highlight-cool">Web3 technologies</span> while leading 
+    innovative <span class="highlight-cool">hackathon teams</span>.
+  </p>
+</section>
+
+
+
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill">C</div>
+       <div class="skill">C++</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React.js</div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Short description of your project. You can add GitHub or live links.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Another project description here. Keep it short and neat.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Something cool you’ve built recently.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="certifications">
+  <h2>Certifications</h2>
+  <div class="cert-grid">
+
+    <!-- Certificate 1 -->
+    <div class="cert-card">
+      <img src="Cerficate_1.jpg" alt="Infosys Programming in C Certificate">
+      <h3>Programming in C — Infosys Springboard</h3>
+      <p>Completed a structured course on C programming offered by Infosys Springboard, covering core concepts like data types, loops, arrays, pointers, memory management, and modular programming. Included hands-on exercises to build logical thinking and problem-solving skills.</p>
+      <a href="Cerficate_1.jpg" class="btn" target="_blank">View Certificate</a>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="cert-card">
+      <img src="Cerficate_2.jpg" alt="Unstop Certificate of Excellence">
+      <h3>Certificate of Excellence — Unstop</h3>
+      <p>Secured <b>32nd rank</b> in <b>Challenge 35 of the Weekly Coding Challenge</b> organized by Unstop, representing <b>Arya College of Engineering</b>. Focused on logical problem-solving and competitive programming skills.</p>
+      <a href="Cerficate_2.jpg" class="btn" target="_blank">View Certificate</a>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="cert-card">
+        <img src="HTML.jpg" alt="Unstop Certificate of Excellence">
+      <h3>Complete HTML — Knowledge Gate</h3>
+      <p>Successfully completed the <b>Complete HTML</b> course with a score of 90% on Knowledge Gate, covering web structure, elements, forms, and semantic HTML for building responsive pages.</p>
+      <a href="https://www.knowledgegate.ai//certificate/90C3BDFD" class="btn" target="_blank">View Certificate</a>
+    </div>
+
+    <!-- Certificate 4 -->
+    <div class="cert-card">
+        <img src="CSS.jpg" alt="Unstop Certificate of Excellence">
+      <h3>Complete CSS — Knowledge Gate</h3>
+      <p>Earned a 90% score in <b>Complete CSS</b> from Knowledge Gate, learning advanced styling concepts, responsive design, flexbox, and animations to create modern web interfaces.</p>
+      <a href="https://www.knowledgegate.ai//certificate/C6C41C9A" class="btn" target="_blank">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+<div id="certModal" class="modal">
+  <span class="close-btn" onclick="closeCertificate()">&times;</span>
+  <div class="modal-content">
+    <iframe id="certFrame" src="" frameborder="0"></iframe>
+  </div>
+</div>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Sajal Goyal | All Rights Reserved</p>
+  </footer>
+
+  <!-- ✅ Script connected at bottom -->
+  <script src="script.js"></script>
+</body>
+</html>
